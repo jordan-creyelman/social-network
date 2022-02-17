@@ -28,7 +28,7 @@ const Profile = () => {
   return (
     <div>
       {' '}
-      {!currentUser && 'loading'}
+      {!currentUser && 'vous $etes pas enregistrer'}
       {' '}
       {"le nom user est "+currentUser.username+" " ||'test'}
       {"sont email est  "+currentUser.email ||'test'}

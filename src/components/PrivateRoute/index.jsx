@@ -6,17 +6,21 @@ import { CurrentUser } from '../../stores/actions';
 //   return isLogged ? <Outlet /> : <Navigate to="/login" />;
 // }
 const PrivateRoute =({  }) =>{
-  if (CurrentUser.id!=='undefined'){
+  if (CurrentUser=='undefined'){
     
-    <Outlet/>
+    <Navigate to="/login"/>
+    
   }
   else{
-    <Navigate to="/login"/>
+    <Outlet/>
     
   }
 
 
 }
+
+
+
 
 
 export default PrivateRoute

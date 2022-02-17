@@ -11,4 +11,5 @@ export const CurrentUser = ({ id, username, email }) => ({
   id,
   username,
   email,
+  
 });
