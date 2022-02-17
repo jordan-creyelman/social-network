@@ -12,9 +12,8 @@ return(
 </p>
 <CreatePost />
 
-  {/* <DisplayAllPosts />    */}
   
-  {/* <div className="test">  <All/></div>  */}
+  <div className="test">  <All/></div> 
  
     </div>
  

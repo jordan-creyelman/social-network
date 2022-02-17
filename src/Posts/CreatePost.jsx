@@ -43,7 +43,7 @@ const CreatePost = () => {
         <input type="text" name="text" placeholder="Put your text here" onChange={(e) => setPostText(e.target.value)} />
         <button type="submit" onClick={fetchCreatePost}id="refresh" >ça part </button>
       </form>
-      <All/>
+      
     </div>
   );
 };
