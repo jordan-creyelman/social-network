@@ -1,0 +1,15 @@
+.Navbar  {
+  font-family: sans-serif;
+  padding: 1% 5px;
+ 
+  display: flex;
+    justify-content: space-evenly;  
+  align-items: center;
+}
+.Nav {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+   
+  }
