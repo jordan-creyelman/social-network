@@ -1,9 +1,12 @@
-
+import All from './All'
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
 import {CurrentUser} from "../stores/actions"
 
 const CreatePost = () => {
+  // test
+  
+
   const [postText, setPostText] = useState();
   
   // if(CurrentUser!== undefined){
@@ -38,10 +41,12 @@ const CreatePost = () => {
 
   return (
     <div className="CreatePost">
+   
       <form>
         <input type="text" name="text" placeholder="Put your text here" onChange={(e) => setPostText(e.target.value)} />
-        <button type="submit" onClick={fetchCreatePost}>ça part</button>
+        <button type="submit" onClick={fetchCreatePost}id="refresh" >ça part </button>
       </form>
+      <All/>
     </div>
   );
 };

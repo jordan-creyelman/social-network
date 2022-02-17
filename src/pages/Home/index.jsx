@@ -1,7 +1,8 @@
 import React from 'react';
 
 import CreatePost from '../../Posts/CreatePost';
- import DisplayAllPosts from '../../Posts/DisplayAllPosts';
+ 
+ import All from "../../Posts/All"
 const Home = ()=>{
  
 return(
@@ -10,8 +11,11 @@ return(
   Welcome on My Social Network. This website is a training to Redux and React. We use auth and routing to create a small social media website.
 </p>
 <CreatePost />
-  <DisplayAllPosts />   
+
+  {/* <DisplayAllPosts />    */}
   
+  {/* <div className="test">  <All/></div>  */}
+ 
     </div>
  
 )
