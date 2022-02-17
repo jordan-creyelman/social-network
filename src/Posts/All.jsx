@@ -5,7 +5,9 @@ import Cookies from 'js-cookie';
 // import {CurrentUser} from "../stores/actions"
 
 const All= ()=>{
+  
   const [arrayPost, setArrayPost] = useState([]);
+ 
   useEffect(()=>{
   
     fetch('http://localhost:1337/posts', {
@@ -20,13 +22,15 @@ const All= ()=>{
         console.log(postdata);
         setArrayPost(postdata)
       })
-  
+
+     
 },[]);
-   
+  
     return(
       <div>
         <p>{arrayPost.map(post=><div key={post.id}>{post.text}</div>)
           }</p>
+         
       </div>
   ) 
   

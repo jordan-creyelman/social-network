@@ -4,14 +4,11 @@ import Cookies from 'js-cookie';
 import {CurrentUser} from "../stores/actions"
 
 const CreatePost = () => {
-  // test
   
 
   const [postText, setPostText] = useState();
   
-  // if(CurrentUser!== undefined){
-  //   console.log(CurrentUser)
-  // }
+  
  
   const  id  = CurrentUser.id;
   
