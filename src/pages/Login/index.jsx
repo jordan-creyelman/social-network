@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 import React,{ useState } from 'react';
 import Cookies from 'js-cookie';
-
+import { CurrentUser } from '../../stores/actions';
 
 
 
@@ -21,19 +21,23 @@ const Login = () => {
     fetch('http://localhost:1337/auth/local', {
       method: 'post',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then((userdata) => {
-        Cookies.set('token', userdata.jwt);
+      .then((data) => {
+        Cookies.set('token', data.jwt);
         // eslint-disable-next-line no-console
-        console.log(userdata);
+        console.log(data);
+        CurrentUser.id=data.user.id
+        CurrentUser.username =data.user.name
+        CurrentUser.email=data.user.email
+        console.log(CurrentUser.email)
       });
   };
 
-
+// test
   return (
     <div className="Login">
       <form>
